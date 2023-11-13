@@ -37,33 +37,53 @@
 // NOTE:
 //
 // You must use the following object literal structure when creating new todo items
-// {
+// 
 //   id: 0,
 //   text: "This is a todo item",
 //   completed: false,
-// }
-
+// 
 // Initialise an empty array with the variable name todoItems
+let toDoItems = [];
+let counter = 0;
+
+addToDoItem("Make Coffee");
+removeToDoItem(0);
 
 // Function to add a todo to the list
 // It should accept a string as a parameter (text of the todo item)
 // and it should add a new todo item to the todoItems array
 // the function does not need to return anything
-function addToDoItem(text) {
+
+function addToDoItem(text){
   // Implement the logic to add a task here
 
-  console.log("NOT YET IMPLEMENTED"); // Remove this line when you start working on the function
+let toDoItem = {
+  id : counter, 
+  text : text, 
+  completed : false,
 }
+toDoItems.push(toDoItem);
+counter = counter + 1;
+}
+
+console.log(toDoItems(text))
 
 // Function to remove a todo to the list
 // It should accept a number as a parameter (id of the todo item)
 // Loop through the array of todos, and when you find the todo item with the id
 // that matches the id passed to the function, remove it from the array
 // the function does not need to return anything
-function removeToDoItem(todoId) {
+function removeTodoItem(todoId) {
   // Implement the logic to add a task here
+for (let index = 0; index < toDoItems.length; length++)
 
-  console.log("NOT YET IMPLEMENTED"); // Remove this line when you start working on the function
+{
+  if  (toDoItems[index].id === toDoItems)
+  {toDoItems.spice(index, 1);
+    break;
+  }
+}
+// Remove this line when you start working on the function
 }
 
 // Function to mark a task as completed
