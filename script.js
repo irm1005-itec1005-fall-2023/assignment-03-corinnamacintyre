@@ -62,11 +62,12 @@ let toDoItem = {
   text : text, 
   completed : false,
 }
+
 toDoItems.push(toDoItem);
 counter = counter + 1;
 }
 
-console.log(toDoItems(text))
+console.log(toDoItem)
 
 // Function to remove a todo to the list
 // It should accept a number as a parameter (id of the todo item)
@@ -79,7 +80,7 @@ for (let index = 0; index < toDoItems.length; length++)
 
 {
   if  (toDoItems[index].id === toDoItems)
-  {toDoItems.spice(index, 1);
+  {toDoItems.splice;(index, 1);
     break;
   }
 }
