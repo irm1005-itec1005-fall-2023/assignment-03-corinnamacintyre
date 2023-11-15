@@ -54,20 +54,20 @@ removeToDoItem(0);
 // and it should add a new todo item to the todoItems array
 // the function does not need to return anything
 
-function addToDoItem(text){
+function addToDoItem(text) {
   // Implement the logic to add a task here
 
-let toDoItem = {
+let todoItem = {
   id : counter, 
   text : text, 
   completed : false,
 }
 
-toDoItems.push(toDoItem);
+todoItems.push(todoItem);
 counter = counter + 1;
 }
 
-console.log(toDoItem)
+console.log(todoItem);
 
 // Function to remove a todo to the list
 // It should accept a number as a parameter (id of the todo item)
@@ -79,11 +79,12 @@ function removeTodoItem(todoId) {
 for (let index = 0; index < toDoItems.length; length++)
 
 {
-  if  (toDoItems[index].id === toDoItems)
+  if (toDoItems[index].id === toDoItems)
   {toDoItems.splice;(index, 1);
     break;
   }
 }
+
 // Remove this line when you start working on the function
 }
 
