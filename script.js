@@ -115,12 +115,14 @@ function deleteToDoItem(todoId) {
 for (let i = 0; i < todoItems.length; i++)
 
 { if (todoItems[i].id === todoId)
-  {todoItems [i].id === todoId} 
-
+  { 
+    todoItems.splice (i = 1);
+    break;
   }
 
-}
+ }
 
+}
 
 // Function to clear all completed tasks
 // Loop through the array of todos, and when you find a todo item that is marked
