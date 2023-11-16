@@ -112,8 +112,15 @@ for (let i = 0; i < todoItems.length; i++)
 function deleteToDoItem(todoId) {
   // Implement the logic to remove a task here
 
-  console.log("NOT YET IMPLEMENTED"); // Remove this line when you start working on the function
+for (let i = 0; i < todoItems.length; i++)
+
+{ if (todoItems[i].id === todoId)
+  {todoItems [i].id === todoId} 
+
+  }
+
 }
+
 
 // Function to clear all completed tasks
 // Loop through the array of todos, and when you find a todo item that is marked
